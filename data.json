@@ -1,14 +1,14 @@
 {
   "cities": [
-    {"name":"Clonmel","connects":["Waterford", "Cork", "Limerick", "Kilkenny"], "coordinates":[{"x":"52.362487","y":"-7.701692"}]},
-    {"name":"Dublin","connects":["Kilkenny", "Belfast", "Galway", "Sligo"], "coordinates":[{"x":"53.349311","y":"-6.268901"}]},
-    {"name":"Belfast","connects":["Dublin", "Sligo", "Galway"], "coordinates":[{"x":"54.599235","y":"-5.934874"}]},
-    {"name":"Wexford","connects":["Dublin", "Kilkenny", "Waterford"], "coordinates":[{"x":"52.337972","y":"-6.463663"}]},
-    {"name":"Kilkenny","connects":["Wateford", "Clonmel", "Wexford", "Dublin", "Sligo", "Galway", "Limerick"], "coordinates":[{"x":"52.656018","y":"-7.244809"}]},
-    {"name":"Cork","connects":["Clonmel", "Waterford", "Limerick"], "coordinates":[{"x":"51.897974","y":"-8.465133"}]},
-    {"name":"Limerick","connects":["Clonmel", "Galway", "Kilkenny", "Dublin", "Cork"], "coordinates":[{"x":"52.664721","y":"-8.629169"}]},
-    {"name":"Waterford","connects":["Clonmel", "Cork", "Kilkenny", "Wexford"], "coordinates":[{"x":"52.260425","y":"-7.112172"}]},
-    {"name":"Sligo","connects":["Dublin", "Galway", "Belfast", "Kilkenny"], "coordinates":[{"x":"54.270830","y":"-8.469744"}]},
-    {"name":"Galway","connects":["Sligo", "Belfast", "Dublin", "Limerick", "Kilkenny"], "coordinates":[{"x":"53.270399","y":"-9.056844"}]}
+    {"name":"Clonmel","connects":["Waterford", "Cork", "Limerick", "Kilkenny"], "coordinates":{"x":"52.362487","y":"-7.701692"}},
+    {"name":"Dublin","connects":["Kilkenny", "Belfast", "Galway", "Sligo"], "coordinates":{"x":"53.349311","y":"-6.268901"}},
+    {"name":"Belfast","connects":["Dublin", "Sligo", "Galway"], "coordinates":{"x":"54.599235","y":"-5.934874"}},
+    {"name":"Wexford","connects":["Dublin", "Kilkenny", "Waterford"], "coordinates":{"x":"52.337972","y":"-6.463663"}},
+    {"name":"Kilkenny","connects":["Wateford", "Clonmel", "Wexford", "Dublin", "Sligo", "Galway", "Limerick"], "coordinates":{"x":"52.656018","y":"-7.244809"}},
+    {"name":"Cork","connects":["Clonmel", "Waterford", "Limerick"], "coordinates":{"x":"51.897974","y":"-8.465133"}},
+    {"name":"Limerick","connects":["Clonmel", "Galway", "Kilkenny", "Dublin", "Cork"], "coordinates":{"x":"52.664721","y":"-8.629169"}},
+    {"name":"Waterford","connects":["Clonmel", "Cork", "Kilkenny", "Wexford"], "coordinates":{"x":"52.260425","y":"-7.112172"}},
+    {"name":"Sligo","connects":["Dublin", "Galway", "Belfast", "Kilkenny"], "coordinates":{"x":"54.270830","y":"-8.469744"}},
+    {"name":"Galway","connects":["Sligo", "Belfast", "Dublin", "Limerick", "Kilkenny"], "coordinates":{"x":"53.270399","y":"-9.056844"}}
   ]
 }

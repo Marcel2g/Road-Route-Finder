@@ -52,4 +52,13 @@ public class City {
     public int hashCode() {
         return Objects.hash(getName());
     }
+
+    @Override
+    public String toString() {
+        return "City{" +
+                "name='" + name + '\'' +
+                ", position=" + position +
+                ", connectedCities=" + connectedCities.keySet().toString() +
+                '}';
+    }
 }
