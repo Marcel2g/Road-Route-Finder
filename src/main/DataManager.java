@@ -18,6 +18,7 @@ public class DataManager {
 
     public static DataManager instance = new DataManager();
     private HashMap<String, City> cities = new HashMap<>();
+    private ArrayList<ArrayList> allCurrentRoutes = new ArrayList<>();
 
     private DataManager(){}
 
@@ -70,5 +71,13 @@ public class DataManager {
 
     public void setCities(HashMap<String, City> cities) {
         this.cities = cities;
+    }
+
+    public ArrayList<ArrayList> getAllCurrentRoutes() {
+        return allCurrentRoutes;
+    }
+
+    public void setAllCurrentRoutes(ArrayList<ArrayList> allCurrentRoutes) {
+        this.allCurrentRoutes = allCurrentRoutes;
     }
 }

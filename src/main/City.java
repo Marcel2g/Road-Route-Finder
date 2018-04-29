@@ -2,6 +2,9 @@ package main;
 
 import com.sun.javafx.geom.Vec2f;
 
+import javax.xml.crypto.Data;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Objects;
 
@@ -14,6 +17,23 @@ public class City {
     public City(String name, Vec2f position){
         this.name = name;
         this.position = position;
+    }
+
+    public void findRoute(City destination, ArrayList<String> visitedCities){
+        if(visitedCities.contains(this.getName())){
+            return;
+        }
+
+        visitedCities.add(this.getName());
+
+        if(this.equals(destination)){
+            DataManager.instance.getAllCurrentRoutes().add(visitedCities);
+            System.out.println("Found route! "+ Arrays.toString(visitedCities.toArray()));
+        }
+
+        for(City connectedCity: connectedCities.values()){
+            connectedCity.findRoute(destination, new ArrayList<>(visitedCities));
+        }
     }
 
     public String getName() {
